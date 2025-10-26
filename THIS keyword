@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class crickerter{
+public:
+    string name;
+    int score;
+    crickerter(string name,int score) {
+        this->name=name;
+        this->score=score;
+    }
+
+    void output() {
+        cout<<name<<" "<<score<<endl;
+    }
+};
+
+int main() {
+   crickerter c1("virat",81276876);
+    c1.output();
+    return 0;
+}
