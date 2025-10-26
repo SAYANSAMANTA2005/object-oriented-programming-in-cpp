@@ -1,0 +1,66 @@
+//
+// Created by sayan on 26-10-2025.
+#include <bits/stdc++.h>
+using namespace std;
+
+class student {
+public: // Access specifier
+    // Attributes (Data members)
+    string name;
+    int roll;
+    float gpa;
+    //constructor--> same name as class name
+    student() {//this is -->defalut constructor
+
+    }
+    student(string name,int roll,float gpa) {
+        // consructor simplifies declaration of object
+        this->name=name;
+        this->roll=roll;
+        this->gpa=gpa;
+    }
+    student(int roll,float gpa,string name) {
+        // consructor simplifies declaration of object
+        this->name=name;
+        this->roll=roll;
+        this->gpa=gpa;
+    }
+
+
+    student(string name) {// u can declare any number of constructors
+        this->name=name+"jhjdhfhdj";
+    }
+    void output() {
+        cout<<name<<" "<<roll<<" "<<gpa<<endl;
+    }
+
+};
+
+
+int main() {
+    // Create an object of the Car class
+    student s1("sayan",287,2380.276);
+    s1.name="goat";
+    student s2("ss.com.in");
+
+   // s2.name="akash";ggjdfgkkjdfjgkkgdfkghjfhgjhdjhjschjsandsjhsdjhfkdsjkhkfjkfjkdsjfkjdsekfjdskjfhe
+    s2.roll=7287;
+    s2.gpa=12768126;
+    student s3(287,2380.276,"bhuto");
+    student s6=s1;// DEEP COPy of s1--> s6 a chnage korle S1 a no chnage
+    student &s7=s2;//  SHALLOW COPy of s2--> s7 a chnage korle -->S2  chnage hoya jabe
+    s1.output();
+    s2.output();
+    s3.output();
+    s6.output();
+    s6.name="ultimate goat";
+    s6.output();
+    s1.output();
+    s7.output();
+    s7.name="change name";
+    s7.output();
+    s2.output();
+
+    //cout<<s1.name<<" "<<s1.roll<<" "<<s1.gpa<<endl;
+    return 0;
+}
