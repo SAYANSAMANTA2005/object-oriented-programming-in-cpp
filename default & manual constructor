@@ -1,0 +1,40 @@
+//
+// Created by sayan on 26-10-2025.
+#include <bits/stdc++.h>
+using namespace std;
+
+class student {
+public: // Access specifier
+    // Attributes (Data members)
+    string name;
+    int roll;
+    float gpa;
+    //constructor--> same name as class name
+    student() {//this is -->defalut constructor
+
+    }
+    student(string name,int roll,float gpa) {
+        // consructor simplifies declaration of object
+        this->name=name;
+        this->roll=roll;
+        this->gpa=gpa;
+    }
+    void output() {
+        cout<<name<<" "<<roll<<" "<<gpa<<endl;
+    }
+
+};
+
+
+int main() {
+    // Create an object of the Car class
+    student s1("sayan",287,2380.276);
+    student s2;
+    s2.name="akash";
+    s2.roll=7287;
+    s2.gpa=12768126;
+    s1.output();
+    s2.output();
+    cout<<s1.name<<" "<<s1.roll<<" "<<s1.gpa<<endl;
+    return 0;
+}
