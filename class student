@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class student {
+public: // Access specifier
+    // Attributes (Data members)
+    string name;
+    int roll;
+    float gpa;
+    // Methods (Member functions)
+
+
+};
+
+int main() {
+    // Create an object of the Car class
+     student s1;
+    s1.name="sayan";
+    s1.roll=27;
+    s1.gpa=9.0;
+    cout<<s1.name<<" "<<s1.roll<<" "<<s1.gpa<<endl;
+    return 0;
+}
