@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class crickerter{
+public:
+    string name="aghfafhgagaghga";
+    int score=109108;
+    crickerter() {
+
+    }
+    crickerter(string name,int score) {
+        this->name=name;
+        this->score=score;
+    }
+
+    void output(string name) {
+        cout<<name<<" "<<score<<" "<<name<<endl;
+    }
+    void output1() {
+        cout<<name<<" "<<score<<endl;
+    }
+    void output2(string name) {
+        //this->  makes sure that varibale is of the object's
+        // not any other varible
+        cout<<this->name<<" "<<this->score<<" "<<name<<endl;
+    }
+    int matches() {
+        return score;//==this->score;
+    }
+};
+
+int main() {
+   crickerter c1("virat",81276876);
+    crickerter c2;
+    c2.output1();
+    c1.output("sayan");
+    c1.output1();
+    c1.output2("sayan");
+    cout<<c1.matches()<<endl;
+    return 0;
+}
